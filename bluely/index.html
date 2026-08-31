@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Metadata -->
+  <title>BLUELY | Naturally Blue Butterfly Pea Infused Water</title>
+  <meta name="description" content="Discover BLUELY — naturally blue butterfly pea infused water created for a refreshing, modern hydration experience.">
+  <meta name="keywords" content="butterfly pea infused water, butterfly pea water, botanical water, blue infused water, premium infused water, natural blue water, functional hydration">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.bluelywater.com/">
+  <meta property="og:title" content="BLUELY | Naturally Blue Butterfly Pea Infused Water">
+  <meta property="og:description" content="Discover BLUELY — naturally blue butterfly pea infused water created for a refreshing, modern hydration experience.">
+  <meta property="og:image" content="./assets/images/hero_bottle.jpg">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header Navigation
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="#home" class="brand-logo">
+          BLUELY <span class="dot"></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#butterfly-pea" class="nav-link">Butterfly Pea</a></li>
+          <li><a href="#benefits" class="nav-link">Health Benefits</a></li>
+          <li><a href="#partner" class="nav-link">Partner With Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span>BLUELY</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <strong>India's First Infused Blue Water</strong> — We don't just sell water. We create a new category.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-primary" onclick="openModal()">
+              <span>Get Early Access</span>
+              <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
+            </button>
+
+            <a href="#butterfly-pea" class="btn btn-secondary">
+              <span>Why Butterfly Pea?</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-ambient-glow"></div>
+          <div class="hero-image-wrapper">
+            <img src="./assets/images/hero_bottle.jpg" alt="BLUELY Butterfly Pea Infused Water Clear Glass Bottle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Brand Philosophy (Editorial Section)
+       ========================================================================== -->
+  <section class="section-lg philosophy-section" id="story">
+    <div class="container">
+      <div class="philosophy-grid">
+        <div class="philosophy-content">
+          <div class="badge-pill badge-pill-dark">Brand Philosophy</div>
+          <h2>Choose Better. Drink Better.</h2>
+          <p>
+            We believe everyday hydration can be simple, refreshing and beautifully different. BLUELY is our take on a new generation of botanical beverages — designed for modern lifestyles and inspired by nature.
+          </p>
+          <div class="philosophy-quote">
+            "A modern beverage is more than utility. It is an aesthetic ritual of wellbeing."
+          </div>
+        </div>
+
+        <div class="philosophy-media">
+          <img src="./assets/images/lifestyle_scene.jpg" alt="BLUELY Luxury Lifestyle Scene in Modern Setting">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Product Section
+       ========================================================================== -->
+  <section class="section product-section" id="product">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">Product Highlight</div>
+        <h2>A Different Kind of Water.</h2>
+        <p>
+          BLUELY brings together refreshing hydration and the natural beauty of butterfly pea. A clean, modern drinking experience with a naturally distinctive blue character.
+        </p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i data-lucide="flower-2"></i>
+          </div>
+          <h4>Butterfly Pea Infused</h4>
+          <p>Carefully infused with Asian butterfly pea flowers for an unforgettable visual character.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i data-lucide="droplets"></i>
+          </div>
+          <h4>Refreshing Hydration</h4>
+          <p>Clean, crisp taste formulated for continuous daily refreshment across active lifestyles.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i data-lucide="palette"></i>
+          </div>
+          <h4>Naturally Blue</h4>
+          <p>Zero artificial dyes, blue colors, or synthetic additives. 100% natural botanical hue.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i data-lucide="crown"></i>
+          </div>
+          <h4>Premium Experience</h4>
+          <p>Designed for upscale dining, luxury wellness spaces, fine hospitality, and mindful homes.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i data-lucide="sparkle"></i>
+          </div>
+          <h4>Modern Botanical Beverage</h4>
+          <p>Bridging traditional Indian flora with international luxury beverage aesthetics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Full Landing Page Impact Banner
+       ========================================================================== -->
+  <section class="full-landing-banner">
+    <div class="container">
+      <div class="banner-inner-box">
+        <div class="banner-text-content">
+          <div class="badge-pill badge-pill-dark">
+            <i data-lucide="award" style="width:14px;height:14px;color:#7dd3fc;"></i>
+            <span>Botanical Water Standard</span>
+          </div>
+
+          <h2 class="banner-headline">
+            Hydration Reimagined in Pure Botanical Blue.
+          </h2>
+
+          <p class="banner-subheadline">
+            Crafted from hand-selected butterfly pea blossoms. Zero artificial colors, zero synthetic flavorings, 100% natural elevation for modern lifestyles.
+          </p>
+
+          <div class="banner-features-grid">
+            <div class="banner-stat-chip">
+              <i data-lucide="flower-2"></i>
+              <span>100% Natural Petal Hue</span>
+            </div>
+
+            <div class="banner-stat-chip">
+              <i data-lucide="zap"></i>
+              <span>Electrolyte Balanced</span>
+            </div>
+
+            <div class="banner-stat-chip">
+              <i data-lucide="shield-check"></i>
+              <span>Zero Added Sugar</span>
+            </div>
+
+            <div class="banner-stat-chip">
+              <i data-lucide="recycle"></i>
+              <span>100% Recyclable Eco Glass</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="openModal()">
+              <span>Experience BLUELY</span>
+              <i data-lucide="arrow-right" style="width:18px;height:18px;"></i>
+            </button>
+            <a href="#partner" class="btn btn-outline-white">Partner With Us</a>
+          </div>
+        </div>
+
+        <div class="banner-visual-card">
+          <img src="./assets/images/lifestyle_scene.jpg" alt="BLUELY Luxury Botanical Lifestyle Banner Visual">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Butterfly Pea Story & Interactive Simulator
+       ========================================================================== -->
+  <section class="section pea-story-section" id="butterfly-pea">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-media">
+          <img src="./assets/images/flower_detail.jpg" alt="Butterfly Pea Flower Close Up Photography">
+        </div>
+
+        <div class="story-content">
+          <div class="badge-pill">Botanical Heritage</div>
+          <h2 style="margin-top: 0.75rem; margin-bottom: 1.25rem;">Meet the Flower Behind the Blue.</h2>
+          <p style="margin-bottom: 1.5rem;">
+            Butterfly pea is a naturally blue botanical known for its striking color and long-standing place in traditional cultures. BLUELY brings this beautiful botanical into a modern hydration experience.
+          </p>
+
+          <!-- Interactive pH Color Shift Visualizer Tool -->
+          <div class="color-shift-box">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.75rem;">
+              <span style="font-family:var(--font-heading); font-weight:600; font-size:0.9rem; color:var(--color-indigo-dark);">
+                <i data-lucide="flask-conical" style="width:16px;height:16px;vertical-align:-2px;color:var(--color-blue-cobalt);"></i> Natural Anthocyanin Simulator
+              </span>
+              <span id="shiftStatusText" style="font-size:0.8rem; color:var(--text-tertiary);">Natural Blue</span>
+            </div>
+
+            <div class="color-preview-bar" id="colorPreviewBar">
+              BLUELY INFUSION
+            </div>
+
+            <div class="shift-controls">
+              <button class="shift-btn active" data-shift="pure">Natural Blue</button>
+              <button class="shift-btn" data-shift="mild">Royal Indigo</button>
+              <button class="shift-btn" data-shift="citrus">Citrus Magenta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Health & Wellness Benefits Section
+       ========================================================================== -->
+  <section class="section benefits-section" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">Functional Wellness</div>
+        <h2>Comprehensive Health & Wellness Benefits</h2>
+        <p>
+          BLUELY harnesses the natural power of butterfly pea flowers to deliver comprehensive wellness benefits. Our functional botanical water provides natural plant-powered support for body, mind, and everyday vitality.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card glass-card">
+          <div class="benefit-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h4>Natural Antioxidants</h4>
+          <p>Packed with natural anthocyanins and flavonoids from pure butterfly pea blossoms that help combat daily oxidative stress.</p>
+        </div>
+
+        <div class="benefit-card glass-card">
+          <div class="benefit-icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h4>Beauty & Skin Radiance</h4>
+          <p>Supports a healthy, glowing complexion through deep hydration and natural plant phytochemicals traditionally cherished for skin nourishment.</p>
+        </div>
+
+        <div class="benefit-card glass-card">
+          <div class="benefit-icon">
+            <i data-lucide="brain"></i>
+          </div>
+          <h4>Mental Clarity & Focus</h4>
+          <p>Promotes a calm, focused mindset during demanding workdays and mindful meditation routines through gentle floral nourishment.</p>
+        </div>
+
+        <div class="benefit-card glass-card">
+          <div class="benefit-icon">
+            <i data-lucide="coffee"></i>
+          </div>
+          <h4>Caffeine-Free Wellness</h4>
+          <p>Clean, jitter-free hydration suitable for any time of day — from morning wellness rituals to relaxing evening routines.</p>
+        </div>
+
+        <div class="benefit-card glass-card">
+          <div class="benefit-icon">
+            <i data-lucide="flame"></i>
+          </div>
+          <h4>Metabolic Support</h4>
+          <p>Formulated with zero sugar and natural bioactive compounds that complement healthy metabolic balance and active wellness goals.</p>
+        </div>
+
+        <div class="benefit-card glass-card">
+          <div class="benefit-icon">
+            <i data-lucide="microscope"></i>
+          </div>
+          <h4>Science-Backed Phytochemicals</h4>
+          <p>Grounded in emerging botanical science and traditional herbal heritage for a modern, functional approach to everyday hydration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Sustainability Section
+       ========================================================================== -->
+  <section class="section sustainability-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">Our Commitment</div>
+        <h2>Better for Today. Thoughtful for Tomorrow.</h2>
+        <p style="margin-top:0.75rem;">
+          As BLUELY grows, we are committed to making thoughtful choices around packaging, sourcing and production.
+        </p>
+      </div>
+
+      <div class="sustainability-grid">
+        <div class="sustain-card">
+          <span class="sustain-tag">01 / Sourcing</span>
+          <h4>Thoughtful Sourcing</h4>
+          <p>Working directly with verified flower growers who prioritize natural botanical farming techniques.</p>
+        </div>
+
+        <div class="sustain-card">
+          <span class="sustain-tag">02 / Materials</span>
+          <h4>Responsible Packaging</h4>
+          <p>Selecting recyclable glass and minimal label materials designed to reduce environmental footprint.</p>
+        </div>
+
+        <div class="sustain-card">
+          <span class="sustain-tag">03 / Evolution</span>
+          <h4>Continuous Improvement</h4>
+          <p>Actively auditing our supply chain to innovate cleaner packaging and lower carbon transport.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Lifestyle Section
+       ========================================================================== -->
+  <section class="section lifestyle-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">Everyday Versatility</div>
+        <h2>Take Blue With You.</h2>
+        <p>From slow mornings to busy afternoons, BLUELY is made to fit beautifully into modern life.</p>
+      </div>
+
+      <div class="lifestyle-slider-container">
+        <div class="lifestyle-grid">
+          <div class="lifestyle-item">
+            <img src="./assets/images/lifestyle_scene.jpg" alt="Café Lifestyle">
+            <div class="lifestyle-overlay">
+              <h4>Chic Cafés</h4>
+              <p>Elevating brunch tables & artisan coffee shops.</p>
+            </div>
+          </div>
+
+          <div class="lifestyle-item">
+            <img src="./assets/images/hero_bottle.jpg" alt="Wellness Studio">
+            <div class="lifestyle-overlay">
+              <h4>Gym & Wellness</h4>
+              <p>Restorative hydration for yoga and fitness sessions.</p>
+            </div>
+          </div>
+
+          <div class="lifestyle-item">
+            <img src="./assets/images/flower_detail.jpg" alt="Luxury Hospitality">
+            <div class="lifestyle-overlay">
+              <h4>Hotels & Resorts</h4>
+              <p>A memorable welcome drink for discerning travelers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Wholesale & Distribution Section
+       ========================================================================== -->
+  <section class="section wholesale-section" id="partner">
+    <div class="container">
+      <div class="wholesale-box">
+        <div class="wholesale-info">
+          <div class="badge-pill">B2B Partnerships</div>
+          <h2 style="margin-top:0.75rem;">Bring BLUELY to Your Space</h2>
+          <p style="margin-bottom: 1.5rem;">
+            Interested in bringing BLUELY to your customers? We're building partnerships with forward-thinking retailers, hospitality groups and distributors.
+          </p>
+
+          <ul class="partner-types-list">
+            <li class="partner-type-item"><i data-lucide="check-circle-2"></i> Hotels & Resorts</li>
+            <li class="partner-type-item"><i data-lucide="check-circle-2"></i> Fine Restaurants</li>
+            <li class="partner-type-item"><i data-lucide="check-circle-2"></i> Artisan Cafés</li>
+            <li class="partner-type-item"><i data-lucide="check-circle-2"></i> Wellness Studios</li>
+            <li class="partner-type-item"><i data-lucide="check-circle-2"></i> Premium Retail Stores</li>
+            <li class="partner-type-item"><i data-lucide="check-circle-2"></i> Regional Distributors</li>
+          </ul>
+
+          <!-- Interactive Partner Calculator -->
+          <div style="margin-top: 2.25rem; padding: 1.5rem; background: var(--bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+            <h4 style="font-size: 1rem; color: var(--color-indigo-dark); margin-bottom: 0.75rem;">Partner Program Estimator</h4>
+            <div class="form-group" style="margin-bottom: 0.75rem;">
+              <label class="form-label" style="font-size: 0.8rem;">Est. Weekly Demand</label>
+              <input type="range" id="calcVolumeRange" min="50" max="1000" step="50" value="250" style="width: 100%; accent-color: var(--color-blue-cobalt);">
+              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-tertiary); margin-top: 0.25rem;">
+                <span>50</span>
+                <span id="calcVolumeValue" style="font-weight: 700; color: var(--color-blue-cobalt);">250 bottles / week</span>
+                <span>1000+</span>
+              </div>
+            </div>
+            <div style="font-size: 0.85rem; background: #ffffff; padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <div style="font-weight: 700; color: var(--color-indigo-dark);" id="calcTierDisplay">Select Hospitality Partner</div>
+              <div style="color: var(--text-secondary); font-size: 0.8rem;" id="calcImpactDisplay">Includes dedicated brand ambassador training & custom menu pairing.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wholesale-form-wrapper">
+          <h3 style="margin-bottom: 1.25rem; color: var(--color-indigo-dark);">Partner Inquiry Form</h3>
+          
+          <form id="wholesaleForm">
+            <div class="form-group">
+              <label class="form-label" for="wsName">Your Full Name *</label>
+              <input type="text" id="wsName" class="form-input" placeholder="e.g. Vikramaditya Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="wsCompany">Company / Property Name *</label>
+              <input type="text" id="wsCompany" class="form-input" placeholder="e.g. Azure Beach Resort & Spa" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="wsEmail">Work Email *</label>
+                <input type="email" id="wsEmail" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="wsPhone">Phone Number *</label>
+                <input type="tel" id="wsPhone" class="form-input" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="wsCity">City *</label>
+                <input type="text" id="wsCity" class="form-input" placeholder="e.g. Mumbai / Bengaluru" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="wsType">Business Type *</label>
+                <select id="wsType" class="form-select" required>
+                  <option value="">Select Business Type</option>
+                  <option value="hotel">Hotel / Resort</option>
+                  <option value="restaurant">Restaurant / Fine Dining</option>
+                  <option value="cafe">Artisan Café</option>
+                  <option value="gym">Gym / Wellness Studio</option>
+                  <option value="retail">Premium Retail Store</option>
+                  <option value="distributor">Regional Distributor</option>
+                  <option value="corporate">Corporate Office</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="wsMessage">Message / Partnership Details</label>
+              <textarea id="wsMessage" class="form-textarea" placeholder="Tell us about your space and estimated order volume..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Submit Enquiry</span>
+              <i data-lucide="send" style="width:16px;height:16px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">Our Origin</div>
+        <h2>Blue, Inspired by Nature.</h2>
+      </div>
+
+      <div class="about-content-box glass-card" style="padding: 3rem;">
+        <p style="margin-bottom: 1.25rem;">
+          BLUELY began with a simple idea: <strong>What if everyday hydration could feel more beautiful, more refreshing and more memorable?</strong>
+        </p>
+        <p style="margin-bottom: 1.25rem;">
+          Inspired by the naturally striking blue of butterfly pea, BLUELY is being created as a modern botanical water brand for a new generation of consumers.
+        </p>
+        <p>
+          By combining meticulous botanical infusion with modern packaging design, BLUELY turns simple hydration into a moments-of-calm ritual. Built in India with an eye towards international design, we invite you to experience water in a whole new shade.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Section
+       ========================================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill">Get In Touch</div>
+        <h2>Let's Talk.</h2>
+        <p>We are always eager to connect with botanical water enthusiasts, stockists, and collaborators.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 style="margin-bottom: 1.5rem; color: var(--color-indigo-dark);">Contact Departments</h3>
+          
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i data-lucide="mail"></i></div>
+            <div>
+              <strong style="display:block; color:var(--color-indigo-dark);">General Enquiries</strong>
+              <span style="color:var(--text-secondary);">hello@bluelywater.com</span>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i data-lucide="handshake"></i></div>
+            <div>
+              <strong style="display:block; color:var(--color-indigo-dark);">Partnerships & Retail</strong>
+              <span style="color:var(--text-secondary);">partners@bluelywater.com</span>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i data-lucide="truck"></i></div>
+            <div>
+              <strong style="display:block; color:var(--color-indigo-dark);">Distribution Network</strong>
+              <span style="color:var(--text-secondary);">supply@bluelywater.com</span>
+            </div>
+          </div>
+
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <strong style="display:block; color:var(--color-indigo-dark);">Brand Headquarters</strong>
+              <span style="color:var(--text-secondary);">Bengaluru & Mumbai, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card glass-card" style="padding: 2.5rem;">
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="ctName">Full Name *</label>
+              <input type="text" id="ctName" class="form-input" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ctEmail">Email Address *</label>
+              <input type="email" id="ctEmail" class="form-input" placeholder="name@domain.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ctType">Enquiry Type</label>
+              <select id="ctType" class="form-select">
+                <option value="general">General Enquiry</option>
+                <option value="partner">Partnership</option>
+                <option value="distribution">Distribution</option>
+                <option value="retail">Retail Store</option>
+                <option value="hospitality">Hospitality Supply</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="ctMessage">Message *</label>
+              <textarea id="ctMessage" class="form-textarea" placeholder="How can we help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Grand CTA Banner
+       ========================================================================== -->
+  <section class="cta-banner-section">
+    <div class="cta-banner-content">
+      <div class="badge-pill badge-pill-dark" style="margin-bottom:1rem;">Hydration Redefined</div>
+      <h2>Ready to See Hydration Differently?</h2>
+      <p>Join the movement of mindful hydration. Experience naturally blue botanical water designed for modern living.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <button class="btn btn-primary" onclick="openModal()">Discover BLUELY</button>
+        <a href="#partner" class="btn btn-outline-white">Partner With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" style="color:#ffffff;">
+            BLUELY <span class="dot"></span>
+          </a>
+          <p style="margin-top: 0.5rem; font-weight:600; color:#38bdf8;">Naturally Blue.</p>
+          <p style="font-size:0.9rem; margin-top: 0.5rem;">
+            Choose Better. Drink Better. Botanical pea water designed for modern hydration.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#butterfly-pea">Butterfly Pea</a></li>
+            <li><a href="#benefits">Health Benefits</a></li>
+            <li><a href="#product">Product Info</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Partnership</h4>
+          <ul class="footer-links">
+            <li><a href="#partner">Wholesale Supply</a></li>
+            <li><a href="#partner">Hospitality</a></li>
+            <li><a href="#partner">Retail Distribution</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Stay in the Blue</h4>
+          <p style="font-size:0.875rem; margin-bottom: 1rem;">Subscribe to our newsletter for exclusive brand launch updates and stockist news.</p>
+          
+          <form class="newsletter-box" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.65rem 1rem;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 BLUELY Beverages Pvt. Ltd. All rights reserved.
+        </div>
+
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Shipping Policy</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Sample Request / Early Access Modal Dialog
+       ========================================================================== -->
+  <div class="modal-overlay" id="sampleModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal()">&times;</button>
+
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div class="badge-pill" style="margin-bottom:0.5rem;">Early Access</div>
+        <h3 style="color: var(--color-indigo-dark);">Discover BLUELY</h3>
+        <p style="font-size: 0.9rem;">Register to receive brand updates & priority invitation for initial batch dispatch.</p>
+      </div>
+
+      <form id="sampleModalForm">
+        <div class="form-group">
+          <label class="form-label" for="smName">Your Name</label>
+          <input type="text" id="smName" class="form-input" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="smEmail">Email Address</label>
+          <input type="email" id="smEmail" class="form-input" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="smCity">City</label>
+          <input type="text" id="smCity" class="form-input" placeholder="e.g. Mumbai, Delhi, Bengaluru" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          <span>Request Access</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lucide icons initialization & script -->
+  <script src="./script.js"></script>
+  <script>
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
