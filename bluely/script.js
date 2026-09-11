@@ -1,5 +1,5 @@
 /**
- * BLUELY — Premium Botanical Beverage Interactive Engine
+ * The Liora — Premium Botanical Beverage Interactive Engine
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -198,7 +198,7 @@ function initFormHandlers() {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalText;
         contactForm.reset();
-        showToast('Thank you! Your message has been sent to the BLUELY team.');
+        showToast('Thank you! Your message has been sent to The Liora team.');
       }, 1000);
     });
   }
@@ -210,7 +210,7 @@ function initFormHandlers() {
       e.preventDefault();
       const input = newsletterForm.querySelector('input[type="email"]');
       if (input && input.value) {
-        showToast('Welcome to BLUELY! You are now subscribed to "Stay in the Blue".');
+        showToast('Welcome to The Liora! You are now subscribed to "Stay in the Blue".');
         input.value = '';
       }
     });

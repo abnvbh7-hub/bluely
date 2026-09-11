@@ -1,9 +1,9 @@
 /* ==========================================================================
-   BLUELY — Modern Luxury Botanical Beverage Web Application
+   The Liora — Modern Luxury Botanical Beverage Web Application
    Design System & Styling Rules
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
   /* Brand Palette */
@@ -55,6 +55,7 @@
   /* Typography Families */
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-logo: 'Great Vibes', 'Alex Brush', cursive;
 }
 
 /* Reset & Base Reset */
@@ -437,24 +438,40 @@ button, input, select, textarea {
   justify-content: space-between;
 }
 
+.header.scrolled .brand-logo {
+  font-size: 2.1rem;
+}
+
 .brand-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  gap: 0.35rem;
+  font-family: var(--font-logo);
+  font-size: 2.35rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: var(--color-indigo-dark);
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.brand-logo:hover {
+  color: var(--color-blue-cobalt);
+  transform: scale(1.02);
 }
 
 .brand-logo .dot {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   background-color: var(--color-blue-cobalt);
   border-radius: 50%;
   display: inline-block;
   box-shadow: 0 0 10px var(--color-blue-vibrant);
+  margin-left: 2px;
+  margin-bottom: 3px;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -850,7 +867,7 @@ button, input, select, textarea {
   margin-bottom: 0.65rem;
 }
 
-/* Why BLUELY Section (4 Cards) */
+/* Why The Liora Section (4 Cards) */
 .why-section {
   background: linear-gradient(180deg, rgba(240, 247, 255, 0.9) 0%, rgba(248, 250, 252, 0.92) 100%),
               url('./assets/images/nature_garden_bg.jpg') center/cover no-repeat fixed;
@@ -1224,8 +1241,18 @@ button, input, select, textarea {
 }
 
 .footer-brand .brand-logo {
-  color: #ffffff;
-  margin-bottom: 1rem;
+  color: #ffffff !important;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-brand .brand-logo:hover {
+  color: #38bdf8 !important;
+}
+
+.footer-brand .brand-logo .dot {
+  background-color: #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
 }
 
 .footer-brand p {
